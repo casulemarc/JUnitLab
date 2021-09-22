@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 
 /**
- * @author mkasulecoder
+ * @author Mark Kasule
  *
  */
 class GradebookTester {
@@ -55,8 +55,11 @@ class GradebookTester {
 		// grade 2
 		String gradeActualOutput2 = gradeTest_2.toString();
 
-		assertTrue(gradeActualOutput1.equals("23.0 40.0 56.0"));
-		assertTrue(gradeActualOutput2.equals("30.0 93.0 97.0"));
+		assertTrue(gradeActualOutput1.equals("23.0 40.0 56.0 0.0 0.0 "));
+		
+		assertTrue(gradeActualOutput2.equals("30.0 93.0 97.0 0.0 0.0 "));
+		
+		
 
 		// Score sizes
 		int scoreSize1 = gradeTest_1.getScoreSize();
